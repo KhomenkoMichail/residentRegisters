@@ -11,4 +11,15 @@ A resident program that, when a key 'F11' is pressed, displays a frame with the 
 
 -The values ​​of registers and flags that were changed after the frame appeared are colored white.  
 
--
+-Saves and keeps the background under the frame up to date.
+
+-The frame has a shadow that matches the background.
+
+<img width="1026" height="646" alt="image" src="https://github.com/user-attachments/assets/2ac79f26-af6d-4a2e-97a9-3c60c0ca3340" />
+
+
+## Realization  
+
+-The program replaces the segment and offset of еру 09 interrupt in the interrupt table with the segment and offset of my function,
+which monitors the F11 and F12 key presses to display and remove the frame.
+
